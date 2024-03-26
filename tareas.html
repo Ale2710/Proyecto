@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css"> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Lista de compras</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Historial de compras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recientes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>   
+    <div class="container my-3">
+     <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-white">
+                <h2>Registro de Productos</h2>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Producto</label>
+                        <input type="text" class="form-control" id="name" placeholder="Digita el Nombre del Producto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Cantidad</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Digita la Cantidad">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-success" type="button">Guardar</button>
+                        <button class="btn btn-secondary my-1" type="button">Limpiar</button>
+                      </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 bg-white">
+                <h2>Listado de productos</h2>
+                <table class="table table-striped">
+                        <tr>
+                          <th class="centrado">Id</th>
+                          <th class="centrado">Producto</th>
+                          <th class="centrado">Cantidad</th>
+                          <th class="centrado">Editar</th>
+                          <th class="centrado">Eliminar</th>
+                        </tr>
+                        <tr>
+                          <td class="centrado">1</td>
+                          <td class="centrado">Arroz</td>
+                          <td class="centrado">12 und</td>
+                          <td class="centrado"> <img src="Images/editar.png" width="20" height="20" alt="Editar"> </td>
+                          <td class="centrado"> <img src="Images/borrar.png" width="20" height="20" alt="Eliminar"> </td>
+                        </tr>
+                        <tr>
+                          <td class="centrado">2</td>
+                          <td class="centrado">Leche liquida</td>
+                          <td class="centrado">6 und</td>
+                          <td class="centrado"> <img src="Images/editar.png" width="20" height="20" alt="Editar"> </td>
+                          <td class="centrado"> <img src="Images/borrar.png" width="20" height="20" alt="Eliminar"> </td>
+                        </tr>-
+                      </table>
+                  </table>
+            </div>
+  </div>   
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
